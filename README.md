@@ -1,3 +1,10 @@
+Car2Go Vizualization
+====================
+Which questions can we answer:
+1. Let's start with a very simple one – how many cars are available in the city depending on the time of the day
+2.
+
+
 Car2Go Cloudant Queries
 ====================
 
