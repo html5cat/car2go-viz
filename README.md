@@ -7,7 +7,7 @@ Which questions can we answer:
 
 Car2Go Cloudant Queries
 ====================
-
+1.
 Map function:
 ```
 
@@ -22,6 +22,13 @@ function(doc) {
 
 ```
 
+2.
+emit  location, vin, date
+
+3. have custom reduce emitting path as geojson
+
+
+## Queries
 1. By minute and for Vancouver:
 ```
 https://dybskiy.cloudant.com/car2go-march/_design/stats/_view/byCity?group_level=6&reduce=true&startkey=[%22Vancouver%22]&endkey=[%22Washington%20DC%22]
