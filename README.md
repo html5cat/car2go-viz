@@ -33,3 +33,7 @@ emit  location, vin, date
 ```
 https://dybskiy.cloudant.com/car2go-march/_design/stats/_view/byCity?group_level=6&reduce=true&startkey=[%22Vancouver%22]&endkey=[%22Washington%20DC%22]
 ```
+
+Reference
+============
+Here's a fun project by Matt Sacks – [http://sacks.io/disposable-cars/](http://sacks.io/disposable-cars/)
