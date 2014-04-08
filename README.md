@@ -11,6 +11,32 @@ Which questions can we answer:
 3. {{yourQuestionHere}}
 
 
+Car2Go Optimization
+====================
+
+A look from the point of operator/owner
+What they may want?
+No brainier, max profit! Even more specifically - max profit every next day.
+
+Quick look into the problem gives a straight tech goal:
+"minimization of average park time for entire fleet for every next day".
+ 
+In order to achieve this goal the following tasks needs to be solved:
+1) Rank locations against car demand
+2) Motivate users returning cars to the locations with highest demand through an intelligent billing policy. 
+
+Tech question No 1: How to measure car demand?
+
+Demand can be evaluated by the following measure/procedure:
+1) Apply rect mesh (say 1km cell size) to entire area
+2) Build a histogram "Number of cars vs park time"
+3) Do simple statistics for diagrams for all locations (mean, mode)
+4) Select the most suitable 
+5) Apply it for test sample.
+6) Test motivation algorithms to find those maximizing profit  
+ 
+
+
 Data
 ====================
 
