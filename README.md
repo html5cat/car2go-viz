@@ -1,4 +1,4 @@
-Car2Go Vizualizations
+Car2Go Visualizations
 ====================
 
 I'm a fan of car-sharing and Car2Go in particular ([it has an API!](https://code.google.com/p/car2go/)). A lot of my friends use it and I think it would be nice to visualize movements over extended periods of time to spot interesting patterns.
