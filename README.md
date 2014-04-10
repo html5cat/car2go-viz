@@ -1,17 +1,22 @@
-Car2Go: What does the app do now?
+Car2Go: What do existing apps do now?
 ====================
 
 The Car2Go app shows the following:
+
 1. Locations of cars available at this moment of time
+
 2. Gas/charge remaining in the car
+
 3. {{Add your points here}}
 
 
 Car2Go: What else may a user want?
 ====================
 
-1. For my How many cars are available in my city at some specific time of the day?
-2. What's the likelyhood of catching a car at this particular location at this time of the day
+1. For my week/day planning I would like to see how car's availability changes during the day?
+
+2. What's the likelyhood of catching a car at some particular location at some specific time of the day?
+
 3. {{yourQuestionHere}}
 
 
@@ -21,20 +26,23 @@ Car2Go: What does the operator/owner want?
 No brainier, max profit! Even more specifically - max profit every next day.
 
 Quick look into the problem gives a straight tech goal:
-"minimization of average park time for entire fleet for every next day".
+
+"Minimization of average park time for entire fleet for every next day".
 
 
-
-Car2Go: What can we propose.
+Car2Go: What do we propose.
 ====================
 
-Build an app that will provide users the following info:
+Answer for users is straightforward: They may love an app that will visualize whatever is mentioned in the list in the beginning.
+
+Owner may want, for example, to see how locations are ranked against car demand, and how this demand is changing throughout the day.
+
+Also we believe in intelligent billing policy that will help to motivate moving cars to the locations with highest demand.
 
 
- 
 In order to achieve this goal the following tasks needs to be solved:
 1) Rank locations against car demand
-2) Motivate users returning cars to the locations with highest demand through an intelligent billing policy. 
+2)  . 
 
 
 
@@ -68,14 +76,6 @@ I have a couple of datasets hosted on [Cloudant](https://cloudant.com/) that you
 
 
 Aaron has a nice archive for Portland: [http://aaronparecki.com/car2go](http://aaronparecki.com/car2go)
-
-
-
-
-
-
-
-
 
 
 Car2Go Cloudant Queries
