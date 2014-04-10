@@ -1,18 +1,59 @@
-Car2Go Vizualizations
+Car2Go: What do existing apps do now?
 ====================
 
-I'm a fan of car-sharing and Car2Go in particular ([it has an API!](https://code.google.com/p/car2go/)). A lot of my friends use it and I think it would be nice to visualize movements over extended periods of time to spot interesting patterns.
+The Car2Go app shows the following:
+
+1. Locations of cars available at this moment of time
+
+2. Gas/charge remaining in the car
+
+3. {{Add your points here}}
 
 
-Which questions can we answer:
+What else may a Car2Go user want?
+====================
 
-1. Let's start with a very simple one – how many cars are available in the city depending on the time of the day
-2. What's the likelyhood of catching a car at this particular location at this time of the day
+1. For my week/day planning I would like to see how car's availability changes during the day?
+
+2. What's the likelyhood of catching a car at some particular location at some specific time of the day?
+
 3. {{yourQuestionHere}}
 
 
-Data
+What does the Car2Go operator/owner want?
 ====================
+
+No brainier, max profit! Even more specifically - max profit every next day.
+
+Quick look into the problem gives a straight tech goal:
+
+"Minimization of average park time for entire fleet for every next day".
+
+
+What do we propose.
+====================
+
+Answer for users is straightforward: They may love an app that will visualize whatever is mentioned in the list in the beginning.
+
+Owner may want, for example, to see how locations are ranked against car demand, and how this demand is changing throughout the day.
+
+Also we believe in intelligent billing policy that will help to motivate moving cars to the locations with highest demand.
+
+
+Our stratigic plan
+===========
+
+Attack the development from two directions.
+
+1. Start developing a local Matlab-based prototype to model and visualize dynamic users-cars interactions based on real data for the given city. 
+
+2. Along with Matlab prototype start developing a mobile app to make sure that features implemented in prototype will work in mobile environment. Use mobile implementation experience as a feedback for parallel prototype development. 
+
+
+References
+============
+
+There is [Car2Go API!](https://code.google.com/p/car2go/). 
 
 I have a couple of datasets hosted on [Cloudant](https://cloudant.com/) that you can play with:
 
@@ -23,6 +64,31 @@ I have a couple of datasets hosted on [Cloudant](https://cloudant.com/) that you
 Aaron has a nice archive for Portland: [http://aaronparecki.com/car2go](http://aaronparecki.com/car2go)
 
 
+Here's a fun project by Matt Sacks visualizing Car2Go Portland movements over last three days – [http://sacks.io/disposable-cars/](http://sacks.io/disposable-cars/)
+
+
+====================================================================
+APPENDIX
+====================================================================
+
+
+Tech question: How to measure car demand?
+==================
+
+Demand can be evaluated by the following measure/procedure:
+
+1) Apply rect mesh (say 1km cell size) to entire area
+
+2) Build a histogram "Number of cars vs park time"
+
+3) Do simple statistics for diagrams for all locations (mean, mode)
+
+4) Select the most suitable 
+
+5) Apply it for test sample.
+
+6) Test motivation algorithms to find those maximizing profit  
+ 
 
 Car2Go Cloudant Queries
 ====================
@@ -53,6 +119,5 @@ emit  location, vin, date
 https://dybskiy.cloudant.com/car2go-march/_design/stats/_view/byCity?group_level=6&reduce=true&startkey=[%22Vancouver%22]&endkey=[%22Washington%20DC%22]
 ```
 
-Reference
-============
-Here's a fun project by Matt Sacks visualizing Car2Go Portland movements over last three days – [http://sacks.io/disposable-cars/](http://sacks.io/disposable-cars/)
+
+
