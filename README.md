@@ -1,29 +1,43 @@
-Car2Go Vizualizations
+Car2Go: What does the app do now?
 ====================
 
-I'm a fan of car-sharing and Car2Go in particular ([it has an API!](https://code.google.com/p/car2go/)). A lot of my friends use it and I think it would be nice to visualize movements over extended periods of time to spot interesting patterns.
+The Car2Go app shows the following:
+1. Locations of cars available at this moment of time
+2. Gas/charge remaining in the car
+3. {{Add your points here}}
 
 
-Which questions can we answer:
+Car2Go: What else may a user want?
+====================
 
-1. Let's start with a very simple one – how many cars are available in the city depending on the time of the day
+1. For my How many cars are available in my city at some specific time of the day?
 2. What's the likelyhood of catching a car at this particular location at this time of the day
 3. {{yourQuestionHere}}
 
 
-Car2Go Optimization
+Car2Go: What does the operator/owner want?
 ====================
 
-A look from the point of operator/owner
-What they may want?
 No brainier, max profit! Even more specifically - max profit every next day.
 
 Quick look into the problem gives a straight tech goal:
 "minimization of average park time for entire fleet for every next day".
+
+
+
+Car2Go: What can we propose.
+====================
+
+Build an app that will provide users the following info:
+
+
  
 In order to achieve this goal the following tasks needs to be solved:
 1) Rank locations against car demand
 2) Motivate users returning cars to the locations with highest demand through an intelligent billing policy. 
+
+
+
 
 Tech question No 1: How to measure car demand?
 
@@ -36,9 +50,16 @@ Demand can be evaluated by the following measure/procedure:
 6) Test motivation algorithms to find those maximizing profit  
  
 
+visualize movements over extended periods of time to spot interesting patterns.
 
-Data
+
+
+
+
+Available Data
 ====================
+
+There is [Car2Go API!](https://code.google.com/p/car2go/). 
 
 I have a couple of datasets hosted on [Cloudant](https://cloudant.com/) that you can play with:
 
@@ -47,6 +68,13 @@ I have a couple of datasets hosted on [Cloudant](https://cloudant.com/) that you
 
 
 Aaron has a nice archive for Portland: [http://aaronparecki.com/car2go](http://aaronparecki.com/car2go)
+
+
+
+
+
+
+
 
 
 
