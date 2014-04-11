@@ -56,3 +56,5 @@ https://dybskiy.cloudant.com/car2go-march/_design/stats/_view/byCity?group_level
 Reference
 ============
 Here's a fun project by Matt Sacks visualizing Car2Go Portland movements over last three days – [http://sacks.io/disposable-cars/](http://sacks.io/disposable-cars/)
+
+City Bike New York released usage data: [http://citibikenyc.com/system-data](http://citibikenyc.com/system-data)
